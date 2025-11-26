@@ -90,3 +90,4 @@
 
 // console.log(charIndex("happy", "e")); //  undefined
 // // "e" does not exist in "happy", so we return undefined.
+
