@@ -238,7 +238,75 @@
 //   }
 // }
 
+// function backToHome(directions) {
+//   let e = 0,
+//     w = 0,
+//     s = 0,
+//     n = 0;
+//   for (let i = 0; i < directions.length; i++) {
+//     switch (directions[i]) {
+//       case "E":
+//         e++;
+//         break;
+//       case "W":
+//         w++;
+//         break;
+//       case "N":
+//         n++;
+//         break;
+//       case "S":
+//         s++;
+//         break;
+//       default:
+//         "mistake";
+//     }
+//   }
+//   if (e == w && s == n) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-console.log(backToHome("EEWE")); // false
-console.log(backToHome("NENESSWW")); // true
-console.log(backToHome("NEESSW")); // false
+// console.log(backToHome("EEWE")); // false
+// console.log(backToHome("NENESSWW")); // true
+// console.log(backToHome("NEESSW")); // false
+
+// 58 => Spin Around, Touch The Ground
+// Given a list of directions to spin, "left" or "right", return an integer of how many full 360° rotations were made. Note that each word in the array counts as a 90° rotation in that direction.
+
+// spinAround(["right", "right", "right", "right", "left", "right"]) ➞ 1
+// # You spun right 4 times (90 * 4 = 360)
+// # You spun left once (360 - 90 = 270)
+// # But you spun right once more to make a full rotation (270 + 90 = 360)
+
+// function spinAround(r) {
+//   let left_count = 0;
+//   let right_count = 0;
+//   for (let i = 0; i < r.length; i++) {
+//     if (r[i] == "right") {
+//       left_count += 90;
+//     } else {
+//       right_count += 90;
+//     }
+//   }
+//   let res = (left_count - right_count) / 360;
+//   res = res.toFixed(0);
+//   return res >= 0 ? res * 1 : res * -1;
+// }
+
+// function spinAround(r) {
+//   let right_count = 0;
+//   let left_count = 0;
+//   r.forEach((element) => {
+//     element == "left" ? (left_count += 90) : (right_count += 90);
+//   });
+//   let res = ((left_count - right_count) / 360).toFixed(0);
+//   return res >= 0 ? res * 1 : res * -1;
+// }
+
+// console.log(spinAround(["left", "right", "left", "right"])); // 0
+// console.log(
+//   spinAround([ "right", "right", "right", "right", "right", "right", "right", "right",])
+// ); // 2
+// console.log(spinAround(["left", "left", "left", "left"])); // 1
