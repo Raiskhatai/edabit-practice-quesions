@@ -1,14 +1,4 @@
-// 52 => Find Unique Character Strings
-// Create a function that returns only strings with unique characters.
-
-// function filterUnique(arr) {}
-
-// console.log(filterUnique(["abb", "abc", "abcdb", "aea", "bbb"])); // ["abc"]
-// // "b" occurs in "abb" more than once, "b" occurs in "abcdb" more than once, etc.
-// console.log(filterUnique(["88", "999", "989", "9988", "9898"])); // []
-// console.log(filterUnique(["ABCDE", "DDEB", "BED", "CCA", "BAC"])); // ["ABCDE", "BED", "BAC"]
-
-// 53 => Chocolate Dilemma
+// 52 => Chocolate Dilemma
 // Two sisters are eating chocolate, whose pieces are represented as subarrays of [l x w].
 
 // Write a function that returns true if the total area of chocolate is the same for each sister.
@@ -61,7 +51,7 @@
 // console.log(testFairness([[2, 2], [2, 2], [2, 2], [2, 2]], [[4, 4]]) ) //true
 // console.log(testFairness([[1, 5], [6, 3], [1, 1]], [[7, 1], [2, 2], [1, 1]]) )// false
 
-// // 54 => Record Temperatures
+// // 53 => Record Temperatures
 // You are given two arrays that each contain data that represents the min and max weather temperatures for each day of the week.
 
 // The records array contains the all-time record low/high temperatures for that day of the week.
@@ -111,7 +101,7 @@
 //           [[34, 82], [19, 82], [20, 89], [5, 88], [9, 88], [26, 89], [27, 83]]
 // The previous record low for Monday was 24. The current week's low for Monday was 19. So 19 replaces 24 as Monday's new record low.
 
-// 55 => Check if One Array is a Subset of Another
+// 54 => Check if One Array is a Subset of Another
 // Array A is contained inside array B if each element in A also exists in B.
 
 // The number of times a number is present doesn't matter. In other words, if we transformed both arrays into sets, A would be a subset of B.
@@ -169,7 +159,7 @@
 // console.log(subset([1, 3], [1, 33])); // false
 // console.log(subset([1, 3, 10], [10, 8, 8, 8])); // false
 
-// 56 => Even Index Elements in Array
+// 55 => Even Index Elements in Array
 // Create a function that takes an array of integers and returns the sum of all the integers that have an even index, multiplied by the integer at the last index.
 
 // For example:
@@ -212,7 +202,7 @@
 // console.log(evenLast([1, 3, 3, 1, 10])); // 140
 // console.log(evenLast([-11, 3, 3, 1, 10])); // 20
 
-// 57 => Back to Home?
+// 56 => Back to Home?
 // Mubashir has started his journey from home. Given a string of directions (N=North, W=West, S=South, E=East), he will walk for one minute in each direction. Determine whether a set of directions will lead him back to the starting position or not.
 
 // function backToHome(directions) {
@@ -310,3 +300,4 @@
 //   spinAround([ "right", "right", "right", "right", "right", "right", "right", "right",])
 // ); // 2
 // console.log(spinAround(["left", "left", "left", "left"])); // 1
+
