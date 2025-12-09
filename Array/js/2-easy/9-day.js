@@ -262,7 +262,7 @@
 // console.log(backToHome("NENESSWW")); // true
 // console.log(backToHome("NEESSW")); // false
 
-// 58 => Spin Around, Touch The Ground
+// 57 => Spin Around, Touch The Ground
 // Given a list of directions to spin, "left" or "right", return an integer of how many full 360° rotations were made. Note that each word in the array counts as a 90° rotation in that direction.
 
 // spinAround(["right", "right", "right", "right", "left", "right"]) ➞ 1
