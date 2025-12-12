@@ -141,11 +141,19 @@
 //   return val;
 // }
 
-function simonSays(arr1,arr2){
-    
-}
+// function simonSays(arr1, arr2) {
+//   let val = arr1.every((item, i, arr1) => {
+//     if (i < arr1.length - 1) {
+//       console.log(i);
+//       return item == arr2[i + 1];
+//     } else {
+//       return true;
+//     }
+//   });
+//   return val;
+// }
 
-console.log(simonSays([1, 2], [5, 1])); // true
-console.log(simonSays([1, 2], [5, 5])); // false
-console.log(simonSays([1, 2, 3, 4, 5], [0, 1, 2, 3, 4])); // true
-console.log(simonSays([1, 2, 3, 4, 5], [5, 5, 1, 2, 3])); // false
+// console.log(simonSays([1, 2], [5, 1])); // true
+// console.log(simonSays([1, 2], [5, 5])); // false
+// console.log(simonSays([1, 2, 3, 4, 5], [0, 1, 2, 3, 4])); // true
+// console.log(simonSays([1, 2, 3, 4, 5], [5, 5, 1, 2, 3])); // false
