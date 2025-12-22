@@ -1,7 +1,17 @@
 // 70 =>Lonely Integer
 // You are given an array of integers having both negative and positive values, except for one integer which can be negative or positive. Create a function to find out that integer.
 
-// function lonelyInteger(arr) {}
+// function lonelyInteger(arr) {
+//   let other = new Set(arr);
+//   for (let x of arr) {
+//     if (other.has(-x)) {
+//       other.delete(-x);
+//     } else {
+//       other.add(x);
+//     }
+//   }
+//   return [...other][0];
+// }
 
 // console.log(lonelyInteger([1, -1, 2, -2, 3])); // 3
 // // // 3 has no matching negative appearance.
