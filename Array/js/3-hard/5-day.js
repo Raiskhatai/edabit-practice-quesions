@@ -3,21 +3,21 @@
 
 // Create a function that returns an integer representing the number of matching pairs of socks that are available.
 
-function sockMerchant(socks) {
-  let countMap = {};
-  let pairs = 0;
+// function sockMerchant(socks) {
+//   let countMap = {};
+//   let pairs = 0;
 
-  for (let color of socks) {
-    countMap[color] = (countMap[color] || 0) + 1;
-  }
+//   for (let color of socks) {
+//     countMap[color] = (countMap[color] || 0) + 1;
+//   }
 
-  for (let color in countMap) {
-    pairs += Math.floor(countMap[color] / 2);
-  }
+//   for (let color in countMap) {
+//     pairs += Math.floor(countMap[color] / 2);
+//   }
 
-  return pairs;
-}
+//   return pairs;
+// }
 
-console.log(sockMerchant([10, 20, 20, 10, 10, 30, 50, 10, 20])); // 3
-console.log(sockMerchant([50, 20, 30, 90, 30, 20, 50, 20, 90])); // 4
-console.log(sockMerchant([])); // 0
+// console.log(sockMerchant([10, 20, 20, 10, 10, 30, 50, 10, 20])); // 3
+// console.log(sockMerchant([50, 20, 30, 90, 30, 20, 50, 20, 90])); // 4
+// console.log(sockMerchant([])); // 0
