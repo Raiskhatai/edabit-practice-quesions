@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // 45 => All Rotations of a String
 // Create a left rotation and a right rotation function that returns all the left rotations and right rotations of a string.
 
@@ -123,7 +122,7 @@
 //     ["football", "dragon"],
 //   ),
 // ); // [ null, 9]
-=======
+
 // 45 => All Rotations of a String
 // Create a left rotation and a right rotation function that returns all the left rotations and right rotations of a string.
 
@@ -248,4 +247,3 @@
 //     ["football", "dragon"],
 //   ),
 // ); // [ null, 9]
->>>>>>> d81a1fa884d86d0797da29177c16c9f73911c7f9
