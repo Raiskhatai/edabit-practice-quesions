@@ -38,39 +38,39 @@
 
 // The maximum time to complete the interview includes a buffer time of 20 minutes.
 
-function interview(arr, tot) {
-  if (arr.length < 8) {
-    return "disqualified";
-  } else if (tot > 120) {
-    return "disqualified";
-  } else {
-    let val = 0;
-    let returnval = "";
-    for (let index = 0; index < arr.length; index++) {
-      if (index % 2 == 0) {
-        val += 5;
-      }
-      //   console.log(index, item, val);
-      if (val >= arr[index]) {
-        returnval = "qualified";
-      } else {
-        if (arr[index] > val) return "disqualified";
-      }
-    }
-    return returnval;
-  }
-}
+// function interview(arr, tot) {
+//   if (arr.length < 8) {
+//     return "disqualified";
+//   } else if (tot > 120) {
+//     return "disqualified";
+//   } else {
+//     let val = 0;
+//     let returnval = "";
+//     for (let index = 0; index < arr.length; index++) {
+//       if (index % 2 == 0) {
+//         val += 5;
+//       }
+//       //   console.log(index, item, val);
+//       if (val >= arr[index]) {
+//         returnval = "qualified";
+//       } else {
+//         if (arr[index] > val) return "disqualified";
+//       }
+//     }
+//     return returnval;
+//   }
+// }
 
-console.log(interview([5, 5, 10, 10, 15, 15, 20], 120)); // "disqualified");
-console.log(interview([5, 5, 10, 10, 15, 15, 20, 20], 130)); // "disqualified");
+// console.log(interview([5, 5, 10, 10, 15, 15, 20], 120)); // "disqualified");
+// console.log(interview([5, 5, 10, 10, 15, 15, 20, 20], 130)); // "disqualified");
 
-console.log(interview([5, 5, 10, 10, 15, 15, 20, 20], 120)); // "qualified"
-console.log(interview([2, 3, 8, 6, 5, 12, 10, 18], 64)); //  "qualified"
-console.log(interview([5, 5, 10, 10, 25, 15, 20, 20], 120)); // "disqualified"
-//// Exceeded the time limit for a medium question.
+// console.log(interview([5, 5, 10, 10, 15, 15, 20, 20], 120)); // "qualified"
+// console.log(interview([2, 3, 8, 6, 5, 12, 10, 18], 64)); //  "qualified"
+// console.log(interview([5, 5, 10, 10, 25, 15, 20, 20], 120)); // "disqualified"
+// //// Exceeded the time limit for a medium question.
 
-console.log(interview([5, 5, 10, 10, 15, 15, 20], 120)); // "disqualified"
-//// Did not complete all the questions.
+// console.log(interview([5, 5, 10, 10, 15, 15, 20], 120)); // "disqualified"
+// //// Did not complete all the questions.
 
-console.log(interview([5, 5, 10, 10, 15, 15, 20, 20], 130)); // "disqualified"
-//// Solved all the questions in their respected time limits but exceeded the total time limit of the interview.
+// console.log(interview([5, 5, 10, 10, 15, 15, 20, 20], 130)); // "disqualified"
+// //// Solved all the questions in their respected time limits but exceeded the total time limit of the interview.
