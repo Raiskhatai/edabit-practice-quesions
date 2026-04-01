@@ -1,4 +1,4 @@
-// 54=> Gold Distribution
+// 55=> Gold Distribution
 // Mubashir and his friend Matt found some gold piles. They decided to follow simple rules to distribute the gold among them.
 
 // Gold will be divided into n piles.
