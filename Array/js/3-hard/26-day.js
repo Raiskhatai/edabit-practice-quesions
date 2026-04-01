@@ -28,33 +28,28 @@
 
 // Create a function that takes in an array of days as input and the number of days to increment by. Return an array of days after n number of days has passed.
 
-function afterNDays(arr, num) {
-  //   [
-  //     { sunday: 1 },
-  //     { monday: 2 },
-  //     { tuesday: 3 },
-  //     { wednesday: 4 },
-  //     { thursday: 5 },
-  //     { friday: 6 },
-  //     { saturday: 7 },
-  //   ];
-  const weak = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+// function afterNDays(days, n) {
+//   const weak = [
+//     "Sunday",
+//     "Monday",
+//     "Tuesday",
+//     "Wednesday",
+//     "Thursday",
+//     "Friday",
+//     "Saturday",
+//   ];
 
-  const retVal = arr.map((item) => {
-    const ind = weak.indexOf(item);
-    return ind + num < 7 ? weak[ind + num] : weak[ind+num>7];
-  });
-  console.log(retVal);
-}
+//   const retVal = days.map((item) => {
+//     const ind = weak.indexOf(item);
+//     return ind + n < 7
+//       ? weak[ind + n]
+//       : weak[ind + n >= 7 && Math.floor((ind + n) % 7)];
+//   });
+//   return retVal;
+// }
 
-console.log(afterNDays(["Thursday", "Monday"], 4)); // ["Monday", "Friday"]
-console.log(afterNDays(["Sunday", "Sunday", "Sunday"], 1)); // ["Monday", "Monday", "Monday"]
-console.log(afterNDays(["Monday", "Tuesday", "Friday"], 1)); // ["Tuesday", "Wednesday", "Saturday"]
+// console.log(afterNDays(["Monday", "Friday", "Wednesday"], 15)); // ["Tuesday", "Saturday", "Thursday"]
+// console.log(afterNDays(["Thursday", "Monday"], 4)); // ["Monday", "Friday"]
+// console.log(afterNDays(["Sunday", "Sunday", "Sunday"], 1)); // ["Monday", "Monday", "Monday"]
+// console.log(afterNDays(["Monday", "Tuesday", "Friday"], 1)); // ["Tuesday", "Wednesday", "Saturday"]
+// console.log(afterNDays(["Sunday"], 7)); // ["Sunday"]
