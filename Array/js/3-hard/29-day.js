@@ -3,37 +3,47 @@
 
 // Create a function that takes a 2D array (matrix A) and returns a 2D array (matrix A^T).
 
-function makeTranspose(arr){
+// function makeTranspose(arr) {
+//   let arrTrans = [];
 
-}
+//   for (let i = 0; i < arr[0].length; i++) {
+//     let temparr = [];
+//     for (let k = 0; k < arr.length; k++) {
+//       temparr.push(arr[k][i]);
+//     }
+//     arrTrans.push(temparr);
+//   }
+//   return arrTrans;
+// }
 
-console.log(
-  makeTranspose([
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-  ]),
-);
-//  [
-//   [1, 4, 7],
-//   [2, 5, 8],
-//   [3, 6, 9]
-// ]
+// console.log(
+//   makeTranspose([
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9],
+//   ]),
+// );
+// //  [
+// //   [1, 4, 7],
+// //   [2, 5, 8],
+// //   [3, 6, 9]
+// // ]
 
-console.log(
-  makeTranspose([
-    [1, 2],
-    [3, 4],
-    [5, 6],
-  ]),
-);
-//  [
-//   [1, 3, 5],
-//   [2, 4, 6]
-// ]
+// console.log(
+//   makeTranspose([
+//     [1, 2],
+//     [3, 4],
+//     [5, 6],
+//   ]),
+// );
+// //  [
+// //   [1, 3, 5],
+// //   [2, 4, 6]
+// // ]
 
-console.log(makeTranspose([["a", "b"]]));
-//  [
-//   ["a"],
-//   ["b"]
-// ]
+// console.log(makeTranspose([["a", "b"]]));
+// //  [
+// //   ["a"],
+// //   ["b"]
+// // ]
+
