@@ -16,21 +16,24 @@ function thirdMostExpensive(obj) {
       retval = objarr.find((item) => item[1] === objValArr[0]);
       return retval[0];
     }
-    // return retval;
   } else {
     max = -Infinity;
     maxval = "";
-    objValArr.sort((a, b) => a - b);
+    objValArr.sort((a, b) => a - b).reverse();
+    console.log(objValArr);
     let retval = [];
     for (let i = 0; i < objarr.length; i++) {
-      // retval = objarr.find((item) => item[1] === objValArr[2]);
+      retval = objarr.find((item) => item[1] === objValArr[2]);
       objValArr[i];
-      // console.log(objarr.find((item) => item[1] === objValArr[2]));
       break;
     }
     return retval[0];
   }
 }
+
+console.log(
+  thirdMostExpensive({ piano: 100, stereo: 200, tv: 10, timmy: 500 }),
+); // "piano"
 
 console.log(
   thirdMostExpensive({
