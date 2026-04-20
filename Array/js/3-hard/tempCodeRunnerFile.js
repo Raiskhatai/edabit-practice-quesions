@@ -1,1 +1,1 @@
-ind + n
+great[1] - num

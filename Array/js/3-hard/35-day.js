@@ -4,16 +4,20 @@
 function missingLetter(arr) {
   let smallArr = [];
   for (let i = 0; i < arr.length; i++) {
-    smallArr.push([arr[i].toLowerCase().charCodeAt(0)]);
+    smallArr.push([arr[i].charCodeAt(0)]);
   }
+  let exitNum = 0;
   smallArr = smallArr.flat(Infinity);
-  let quiteNum = 0;
-  smallArr.forEach((element, idx) => {
-    console.log(
-      element - arr[0].charCodeAt(0),
-      arr[idx].charCodeAt(0) - arr[0].charCodeAt(0),
-    );
-  });
+  for (let i = 0; i < smallArr.length - 1; i++) {
+    // console.log(
+    //   String.fromCharCode(smallArr[i + 1]),
+    //   String.fromCharCode(smallArr[i]),
+    // );
+    if (smallArr[i + 1] - smallArr[i] === 2) {
+      exitNum = smallArr[i + 1] - 1;
+    }
+  }
+  //   return String.fromCharCode(exitNum);
 }
 
 console.log(missingLetter(["a", "b", "c", "e", "f", "g"])); // "d"
