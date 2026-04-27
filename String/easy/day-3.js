@@ -105,3 +105,135 @@
 
 // const age = 12;
 // `Hello, you are ${age < 18 ? 'young' : 'old'}.` ➞ "Hello, you are young."
+
+// 19 => Luke, I Am Your ...
+// Luke Skywalker has family and friends. Help him remind them who is who. Given a string with a name, return the relation of that person to Luke.
+
+// Person	Relation
+// Darth Vader	father
+// Leia	sister
+// Han	brother in law
+// R2D2	droid
+
+// function relationToLuke(name) {
+//   switch (name) {
+//     case "Darth Vader":
+//       return "Luke, I am your father.";
+//     case "Leia":
+//       return "Luke, I am your sister.";
+//     case "Han":
+//       return "Luke, I am your brother in law.";
+//     case "R2D2":
+//       return "Luke, I am your droid.";
+//     default:
+//       "wrong case";
+//   }
+// }
+
+// console.log(relationToLuke("Darth Vader")); // "Luke, I am your father."
+// console.log(relationToLuke("Leia")); // "Luke, I am your sister."
+// console.log(relationToLuke("Han")); // "Luke, I am your brother in law."
+
+// 20 => Stuttering Function
+// Write a function that stutters a word as if someone is struggling to read it. The first two letters are repeated twice with an ellipsis ... and space after each, and then the word is pronounced with a question mark ?.
+
+// function stutter(word) {
+//   let half = word.slice(0, 2) + "... ";
+//   let repeated = half.repeat(2);
+//   return `${repeated}${word}?`;
+// }
+
+// console.log(stutter("incredible")); // "in... in... incredible?"
+// console.log(stutter("enthusiastic")); // "en... en... enthusiastic?"
+// console.log(stutter("outstanding")); // "ou... ou... outstanding?"
+
+// 21 => Concatenating First and Last Character of a String
+// Create a function that takes a string and returns the concatenated first and last character.
+
+// function firstLast(name) {
+//   let val = name.slice(0, 1);
+//   let valend = name.slice(name.length - 1);
+//   return val + valend;
+// }
+
+// console.log(firstLast("ganesh")); // "gh"
+// console.log(firstLast("kali")); // "ki"
+// console.log(firstLast("shiva")); // "sa"
+// console.log(firstLast("vishnu")); // "vu"
+// console.log(firstLast("durga")); // "da"
+
+// 22 => Is the Last Character an "N"?
+// Create a function that takes a string (a random name). If the last character of the name is an "n", return true, otherwise return false.
+
+// function isLastCharacterN(word) {
+//   let lastword = word.slice(word.length - 1);
+//   return lastword === "n" ? true : false;
+// }
+
+// console.log(isLastCharacterN("Aiden")); // true
+// console.log(isLastCharacterN("Piet")); // false
+// console.log(isLastCharacterN("Bert")); // false
+// console.log(isLastCharacterN("Dean")); // true
+
+// 23 => Extract City Facts
+// Create a function that takes an object as an argument and returns a string with facts about the city. The city facts will need to be extracted from the object's three properties:
+
+// name
+// population
+// continent
+// The string should have the following format: X has a population of Y and is situated in Z (where X is the city name, Y is the population and Z is the continent the city is situated in).
+
+// function cityFacts({ name, population, continent }) {
+//   return `${name} has a population of ${population} and is situated in ${continent}`
+// }
+
+// function cityFacts({ name, population, continent }) {
+//   return `${city.name} has a population of ${city.population} and is situated in ${city.continent}`;
+// }
+
+// console.log(
+//   cityFacts({
+//     name: "Paris",
+//     population: "2,140,526",
+//     continent: "Europe",
+//   }),
+// ); // "Paris has a population of 2,140,526 and is situated in Europe"
+
+// console.log(
+//   cityFacts({
+//     name: "Tokyo",
+//     population: "13,929,286",
+//     continent: "Asia",
+//   }),
+// ); // "Tokyo has a population of 13,929,286 and is situated in Asia"
+
+// 24 => Check String for Spaces
+// Create a function that returns true if a string contains any spaces.
+
+// function hasSpaces(str) {
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === " ") {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(hasSpaces("hello")); // false
+// console.log(hasSpaces("hello, world")); // true
+// console.log(hasSpaces(" ")); // true
+// console.log(hasSpaces("")); // false
+// console.log(hasSpaces(",./!@#")); // false
+
+// 25 => Is the Word Singular or Plural?
+// Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
+
+// function isPlural(word) {
+//   if (word.slice(word.length - 1) === "s") return true;
+//   else return false;
+// }
+
+// console.log(isPlural("changes")); // true
+// console.log(isPlural("change")); // false
+// console.log(isPlural("dudes")); // true
+// console.log(isPlural("magic")); // false
