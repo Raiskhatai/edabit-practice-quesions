@@ -95,25 +95,71 @@
 // 42 => Lowercase, Uppercase or Mixed?
 // Create a function which returns "upper" if all the letters in a word are uppercase, "lower" if lowercase and "mixed" for any mix of the two.
 
-function getCase(str) {
-  let lower = 0;
-  let upper = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (str[i].charCodeAt(0) <= 97) {
-      lower++;
-    } else {
-      upper++;
-    }
-  }
-  if (lower > 0 && upper > 0) {
-    return "mixed";
-  } else if (lower > 0) {
-    return "lower";
-  } else {
-    return "upper";
-  }
-}
+// function getCase(str) {
+//   let lower = 0;
+//   let upper = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i].charCodeAt(0) >= 97 && str[i].charCodeAt(0) <= 122) {
+//       lower++;
+//     } else if (str[i].charCodeAt(0) >= 65 && str[i].charCodeAt(0) <= 90) {
+//       upper++;
+//     }
+//   }
 
-console.log(getCase("whisper...")); // "lower"
-console.log(getCase("SHOUT!")); // "upper"
-console.log(getCase("Indoor Voice")); // "mixed"
+//   if (lower > 0 && upper > 0) {
+//     return "mixed";
+//   } else if (lower > 0) {
+//     return "lower";
+//   } else {
+//     return "upper";
+//   }
+// }
+
+// console.log(getCase("whisper...")); // "lower"
+// console.log(getCase("SHOUT!")); // "upper"
+// console.log(getCase("Indoor Voice")); // "mixed"
+
+// 43=> Raucous Applause
+// After an amazing performance, the crowd goes wild! People clap enthusiastically and most claps overlap with each other to create one homogeneous sound.
+
+// An overlapped clap is a clap which starts but doesn't finish, as in "ClaClap" (The first clap is cut short and there are overall 2 claps)
+
+// Given a string of what the overlapping claps sounded like, return how many claps were made in total.
+
+// function countClaps(str) {
+//   let count = 0;
+//   str = str.toLowerCase();
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === "c") count++;
+//   }
+//   return count;
+// }
+
+// function countClaps(str) {
+//   str = str.toLowerCase();
+//   return str.split("c").length - 1;
+// }
+
+// console.log(countClaps("ClaClaClaClap!")); // 4
+// console.log(countClaps("ClClClaClaClaClap!")); // 6
+// console.log(countClaps("CCClaClClap!Clap!ClClClap!")); // 9
+
+// 44 => Scottish Screaming
+// A strong Scottish accent makes every vowel similar to an "e", so you should replace every vowel with an "e". Additionally, it is being screamed, so it should be in block capitals.
+
+// Create a function that takes a string and returns a string.
+
+// function toScottishScreaming(str) {
+//   let strVal = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if ("aeiouAEIOU".includes(str[i])) {
+//       strVal += "E";
+
+//     } else strVal += str[i];
+//   }
+//   return strVal.toUpperCase();
+// }
+
+// console.log(toScottishScreaming("hello world")); // "HELLE WERLD"
+// console.log(toScottishScreaming("Mr. Fox was very naughty")); // "MR. FEX WES VERY NEEGHTY"
+// console.log(toScottishScreaming("Butterflies are bautiful!")); // "BETTERFLEES ERE BEEETEFEL!"
