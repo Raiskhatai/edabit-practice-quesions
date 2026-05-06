@@ -261,3 +261,32 @@
 // console.log(stupidAddition("1", "2")); // 3
 // console.log(stupidAddition("1", 2)); // null
 
+// 64 =>
+// Mubashir needs your help to count uppercase letters, lowercase letters, numbers and special characters in a given string.
+
+// Create a function which takes a string txt and returns a list of numbers with count of uppercase letters, lowercase letters, numbers and special characters.
+
+function filterString(txt) {
+  let uppercase = 0;
+  let lowercase = 0;
+  let numbers = 0;
+  let special = 0;
+
+  for (let i = 0; i < txt.length; i++) {
+    // console.log(txt[i].charCodeAt(0));
+    if (txt[i].charCodeAt(0) >= 65 && txt[i].charCodeAt(0) <= 90) uppercase++;
+    else if (txt[i].charCodeAt(0) >= 97 && txt[i].charCodeAt(0) <= 122)
+      lowercase++;
+  }
+  // return ["a".charCodeAt(0), "z".charCodeAt(0)];
+  return [uppercase, lowercase, numbers, special];
+}
+
+console.log(filterString("*$(#Mu12bas43hiR%@*!")); // [2, 6, 4, 8]
+//// 2 uppercase letters
+// 6 lowercase letters
+// 4 numbers
+// 8 special characters
+
+console.log(filterString("^^Edabit^^%$#12379")); // [1, 5, 5, 7]
+console.log(filterString("**Airforce1**")); // [1, 7, 1, 4]
