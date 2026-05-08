@@ -266,27 +266,34 @@
 
 // Create a function which takes a string txt and returns a list of numbers with count of uppercase letters, lowercase letters, numbers and special characters.
 
-function filterString(txt) {
-  let uppercase = 0;
-  let lowercase = 0;
-  let numbers = 0;
-  let special = 0;
+// function filterString(txt) {
+//   let uppercase = 0;
+//   let lowercase = 0;
+//   let numbers = 0;
+//   let special = 0;
 
-  for (let i = 0; i < txt.length; i++) {
-    // console.log(txt[i].charCodeAt(0));
-    if (txt[i].charCodeAt(0) >= 65 && txt[i].charCodeAt(0) <= 90) uppercase++;
-    else if (txt[i].charCodeAt(0) >= 97 && txt[i].charCodeAt(0) <= 122)
-      lowercase++;
-  }
-  // return ["a".charCodeAt(0), "z".charCodeAt(0)];
-  return [uppercase, lowercase, numbers, special];
-}
+//   for (let i = 0; i < txt.length; i++) {
+//     // console.log(txt[i].charCodeAt(0));
+//     if (txt[i].charCodeAt(0) >= 65 && txt[i].charCodeAt(0) <= 90) uppercase++;
+//     else if (txt[i].charCodeAt(0) >= 97 && txt[i].charCodeAt(0) <= 122)
+//       lowercase++;
+//     else if (txt[i].charCodeAt(0) >= 48 && txt[i].charCodeAt(0) <= 57) {
+//       numbers++;
+//       console.log(txt[i]);
+//     } else {
+//       special++;
+//     }
+//   }
+//   return [uppercase, lowercase, numbers, special];
+// }
 
-console.log(filterString("*$(#Mu12bas43hiR%@*!")); // [2, 6, 4, 8]
-//// 2 uppercase letters
-// 6 lowercase letters
-// 4 numbers
-// 8 special characters
+// console.log(filterString("@mw>0=QD-iAx!rp9TaG?o&M%l$34L.nbft")); // [7,13,4,10])
 
-console.log(filterString("^^Edabit^^%$#12379")); // [1, 5, 5, 7]
-console.log(filterString("**Airforce1**")); // [1, 7, 1, 4]
+// console.log(filterString("*$(#Mu12bas43hiR%@*!")); // [2, 6, 4, 8]
+// //// 2 uppercase letters
+// // 6 lowercase letters
+// // 4 numbers
+// // 8 special characters
+
+// console.log(filterString("^^Edabit^^%$#12379")); // [1, 5, 5, 7]
+// console.log(filterString("**Airforce1**")); // [1, 7, 1, 4]
